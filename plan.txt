@@ -1,0 +1,53 @@
+- products
+id, user_id, name, quantity, price
+
+- product_images
+id, product_id, image_url
+
+- product_likes
+id, product_id, user_id
+
+------------------------------------------
+
+- product_comments
+id, product_id, comment
+
+- product_comments_likes
+id, product_id, user_id
+
+------------------------------------------
+
+- user_role
+id, name
+
+------------------------------------------
+
+- users
+id, username, email, password, role_id
+
+- user_personal_details
+id, user_id, first_name, last_name, birth_date, contact_number
+
+- user_profile_pictures
+id, user_id, image_url
+
+------------------------------------------
+
+- carts
+id, user_id
+
+- cart_items
+id, cart_id, product_id, quantity
+
+------------------------------------------
+
+- orders
+id, user_id
+
+- order_items
+id, order_id, product_id, quantity
+
+------------------------------------------
+
+- shipping
+id, order_id, status
